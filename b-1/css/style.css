@@ -43,12 +43,15 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 
 .form {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
 }
 
 .all-internships-container {
@@ -56,7 +59,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 90%;
   margin-top: 32px;
   gap: 32px;
 }
@@ -179,3 +182,13 @@ details[open] > summary::before {
 button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 700px) {
+  .search-container, .form {
+    flex-direction: column;
+    
+  }
+
+
+}
+
