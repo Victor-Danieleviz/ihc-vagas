@@ -6,6 +6,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+h2 {
+  margin: 0;
+}
+
 .header {
   width: 100vw;
   display: flex;
@@ -33,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
+  padding-bottom: 50px;
   font-size: 2em;
   height: 128px;
 }
@@ -46,7 +50,7 @@
 
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: centertitle;
   align-items: center;
 
   width: 100%;
@@ -66,10 +70,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgb(145, 145, 146);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 10px 0px;
   border-radius: 8px;
   padding: 32px;
+  width: 400px;
+
+}
+
+.internship-container-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(145, 145, 146);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 10px 0px;
+  border-radius: 8px;
+  padding: 80px;
   width: 50%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .internship-container-page {
+    padding: 30px;
+    width: 80%;
+    font-size: 1.1em;
+  }
+
+  .internship-container {
+    width: 90vh;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .internship-container {
+    width: 59vh;
+  }
 }
 
 .internship-info {
