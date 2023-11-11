@@ -183,6 +183,13 @@ button:hover {
   cursor: pointer;
 }
 
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+}
+
 @media (max-width: 700px) {
   .search-container, .form {
     flex-direction: column;
