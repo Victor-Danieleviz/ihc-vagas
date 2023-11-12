@@ -98,13 +98,13 @@ h2 {
   }
 
   .internship-container {
-    width: 50vh;
+    width: 90vh;
   }
 }
 
 @media only screen and (max-width: 568px) {
   .internship-container {
-    width: 55vh;
+    width: 49vh;
   }
 }
 
