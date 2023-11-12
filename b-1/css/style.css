@@ -90,7 +90,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .internship-container-page {
     padding: 30px;
     width: 80%;
@@ -98,13 +98,13 @@ h2 {
   }
 
   .internship-container {
-    width: 90vh;
+    width: 50vh;
   }
 }
 
 @media only screen and (max-width: 568px) {
   .internship-container {
-    width: 59vh;
+    width: 55vh;
   }
 }
 
