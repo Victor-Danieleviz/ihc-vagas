@@ -17,6 +17,10 @@ h2 {
   align-items: center;
 }
 
+.header-title {
+  text-align: center;
+}
+
 .header nav {
   display: flex;
   justify-content: space-between;
@@ -74,7 +78,7 @@ h2 {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 10px 0px;
   border-radius: 8px;
   padding: 32px;
-  width: 400px;
+  width: 100%;
 
 }
 
@@ -97,16 +101,8 @@ h2 {
     font-size: 1.1em;
   }
 
-  .internship-container {
-    width: 90vh;
-  }
 }
 
-@media only screen and (max-width: 568px) {
-  .internship-container {
-    width: 49vh;
-  }
-}
 
 .internship-info {
   width: 90%;
