@@ -35,7 +35,8 @@
   align-items: center;
   justify-content: space-around;
   
-  font-size: 2em;
+  font-size: 2.6em;
+  font-weight: lighter;
   height: 128px;
 }
 
@@ -43,6 +44,38 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.search-container input {
+  background-color: whitesmoke;
+  border: none;
+  width: 256px;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 8px;
+}
+
+.search-container button {
+  background-color: white;
+  color: #1351b4;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #1351b4;
+  padding: 12px 24px;
+  border-radius: 24px;
+}
+
+.form button {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: #1351b4;
 }
 
 .form {
@@ -56,7 +89,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 700px;
   margin-top: 32px;
   gap: 32px;
 }
@@ -182,7 +215,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .header nav {
     justify-content: center;
     height: 24px;
@@ -193,6 +226,7 @@ button:hover {
     font-size: 1.2em;
     margin-top: 32px;
     gap: 16px;
+    margin-bottom: 16px;
   }
 
   .search-container {
@@ -201,7 +235,6 @@ button:hover {
 
   .search-container button {
     width: 100vw;
-    height: 36px;
     border: none;
     background-color: white;
     border: 1px solid #1351b4;
@@ -232,6 +265,6 @@ button:hover {
   }
 
   .internship-container {
-    width: 70vw;
+    max-width: 380px;
   }
 }
