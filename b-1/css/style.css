@@ -204,7 +204,9 @@ details[open] > summary::before {
   height: 48px;
   border-radius: 8px;
   border: none;
-  background-color: darkgray;
+  background-color: #1351b4;
+  color: white;
+  padding: 0 16px;
   font-size: 1.2em;
   font-weight: bold;
 }
