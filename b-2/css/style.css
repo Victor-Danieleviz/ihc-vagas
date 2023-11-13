@@ -35,8 +35,7 @@
   align-items: center;
   justify-content: space-around;
   
-  font-size: 2.6em;
-  font-weight: lighter;
+  font-size: 2em;
   height: 128px;
 }
 
@@ -44,38 +43,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.search-container input {
-  background-color: whitesmoke;
-  border: none;
-  width: 256px;
-  margin-left: 16px;
-  margin-right: 16px;
-  height: 48px;
-  padding-left: 48px;
-  padding-right: 48px;
-  border-radius: 8px;
-}
-
-.search-container button {
-  background-color: white;
-  color: #1351b4;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid #1351b4;
-  padding: 12px 24px;
-  border-radius: 24px;
-}
-
-.form button {
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 24px;
-  background-color: #1351b4;
 }
 
 .form {
@@ -89,7 +56,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 700px;
+  width: 75%;
   margin-top: 32px;
   gap: 32px;
 }
@@ -98,10 +65,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgb(145, 145, 146);
   border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 10px 0px;
   padding: 32px;
-  width: 50%;
+  width: 420px;
 }
 
 .internship-info {
@@ -216,6 +184,24 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .search-container,
+  .form {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  
+  .header {
+    padding-bottom: 70px;
+  }
+
+  .internship-container {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+
   .header nav {
     justify-content: center;
     height: 24px;
@@ -224,9 +210,7 @@ button:hover {
   
   .title {
     font-size: 1.2em;
-    margin-top: 32px;
-    gap: 16px;
-    margin-bottom: 16px;
+    padding-top: 50px;
   }
 
   .search-container {
@@ -235,6 +219,7 @@ button:hover {
 
   .search-container button {
     width: 100vw;
+    height: 36px;
     border: none;
     background-color: white;
     border: 1px solid #1351b4;
@@ -265,6 +250,6 @@ button:hover {
   }
 
   .internship-container {
-    max-width: 380px;
+    width: 70vw;
   }
 }
